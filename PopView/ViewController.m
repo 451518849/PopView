@@ -39,6 +39,8 @@
     _recognizerDown.direction = UISwipeGestureRecognizerDirectionDown;
     [self.view addGestureRecognizer:_recognizerDown];
 
+    NSLog(@"");
+    
 }
 
 
