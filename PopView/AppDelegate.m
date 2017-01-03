@@ -16,9 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    AFHTTPSessionManager *manager;
-    
+        
     // Override point for customization after application launch.
     return YES;
 }
