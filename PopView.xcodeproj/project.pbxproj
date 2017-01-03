@@ -14,6 +14,7 @@
 		18CA81301C36629300919C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CA812F1C36629300919C0D /* Assets.xcassets */; };
 		18CA81331C36629300919C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CA81311C36629300919C0D /* LaunchScreen.storyboard */; };
 		18CA813D1C3662C300919C0D /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA813C1C3662C300919C0D /* PopView.m */; };
+		7985F2D591214B939A9EE2B8 /* Pods_PopView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2786C4D1A96B8CF7E2DAC528 /* Pods_PopView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,10 @@
 		18CA81341C36629300919C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CA813B1C3662C300919C0D /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
 		18CA813C1C3662C300919C0D /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		18DE83D01E1BA881002541D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = PopView/PrefixHeader.pch; sourceTree = "<group>"; };
+		2786C4D1A96B8CF7E2DAC528 /* Pods_PopView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		491C5D9FF4B5F18F1533F61D /* Pods-PopView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopView.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopView/Pods-PopView.release.xcconfig"; sourceTree = "<group>"; };
+		CCDFA52DFBAC5F74DD99BB49 /* Pods-PopView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopView/Pods-PopView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7985F2D591214B939A9EE2B8 /* Pods_PopView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140E135FB74185702E306A0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2786C4D1A96B8CF7E2DAC528 /* Pods_PopView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18CA81171C36629300919C0D = {
 			isa = PBXGroup;
 			children = (
+				18DE83D01E1BA881002541D3 /* PrefixHeader.pch */,
 				18CA81221C36629300919C0D /* PopView */,
 				18CA81211C36629300919C0D /* Products */,
+				564E48B61ACD1A390D138C38 /* Pods */,
+				140E135FB74185702E306A0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +109,15 @@
 			name = view;
 			sourceTree = "<group>";
 		};
+		564E48B61ACD1A390D138C38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCDFA52DFBAC5F74DD99BB49 /* Pods-PopView.debug.xcconfig */,
+				491C5D9FF4B5F18F1533F61D /* Pods-PopView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CA81371C36629300919C0D /* Build configuration list for PBXNativeTarget "PopView" */;
 			buildPhases = (
+				6CF2594BE1CD53330D797EDA /* [CP] Check Pods Manifest.lock */,
 				18CA811C1C36629300919C0D /* Sources */,
 				18CA811D1C36629300919C0D /* Frameworks */,
 				18CA811E1C36629300919C0D /* Resources */,
+				35E65B3EF381F97348290A4A /* [CP] Embed Pods Frameworks */,
+				F4A30C1C96B25F3091643BAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +186,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E65B3EF381F97348290A4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopView/Pods-PopView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF2594BE1CD53330D797EDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A30C1C96B25F3091643BAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopView/Pods-PopView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18CA811C1C36629300919C0D /* Sources */ = {
@@ -274,27 +351,33 @@
 		};
 		18CA81381C36629300919C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDFA52DFBAC5F74DD99BB49 /* Pods-PopView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8P2DS22MA9;
+				GCC_PREFIX_HEADER = PopView/PrefixHeader.pch;
 				INFOPLIST_FILE = PopView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangxiaofa.c--Library.PopView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 			};
 			name = Debug;
 		};
 		18CA81391C36629300919C0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491C5D9FF4B5F18F1533F61D /* Pods-PopView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8P2DS22MA9;
+				GCC_PREFIX_HEADER = PopView/PrefixHeader.pch;
 				INFOPLIST_FILE = PopView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangxiaofa.c--Library.PopView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 			};
 			name = Release;
 		};
